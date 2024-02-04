@@ -12,7 +12,7 @@ public class Main {
             LocalDate.of(2021,07,01), new Illness("Аденовироз"));
 
     Animal duck = new Animal("Чеппи", new Owner("Хорина Татьяна"),
-            LocalDate.of(2019,08,12), new Illness("Паратиф"));
+            LocalDate.of(2023,05,13), new Illness("Паратиф"));
 
     private class LocalDate {
     }

@@ -1,7 +1,12 @@
+package main;
+
+import main.clients.*
 import Clients.Animal;
 import Clients.Illness;
 import Clients.Owner;
-
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 public class Main {
     public static void main(String[] args) {
     }

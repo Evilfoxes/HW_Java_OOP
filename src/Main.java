@@ -32,7 +32,7 @@ public class Main {
     dog.sleep(10);
     System.out.println();
     System.out.println("---------");
-    System.out.println(Duck);
+    System.out.println(duck);
     duck.toGo(10);
     duck.ate(3);
     duck.sleep(10);

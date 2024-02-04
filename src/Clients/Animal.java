@@ -1,4 +1,4 @@
-package main.clients;
+package Clients;
 
 import java.time.LocalDate;
 public class Animal {

@@ -1,7 +1,7 @@
 package Clients;
 
 import java.time.LocalDate;
-public class Animal {
+public abstract class Animal {
 
     protected String nickName;
     protected Owner owner;
@@ -19,6 +19,9 @@ public class Animal {
 
     public Animal() {
         this("Кличка", new Owner("Хозяин"), LocalDate.now(), new Illness("Заболевание"));
+    }
+
+    public Animal(String nickName, Owner owner, LocalDate birthDate, Illness illness, int movementStatistics) {
     }
 
     public String getNickName() {
@@ -57,6 +60,9 @@ public class Animal {
     public void eat() {
         System.out.println("Животное" + nickName + "поело");
     }
+
+    public abstract void eat(int grams);
+
     public void sleep(int i) {
         System.out.println("Животное" + nickName + "поднималось на " + i);
     }

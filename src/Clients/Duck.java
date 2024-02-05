@@ -3,8 +3,7 @@ package Clients;
 import java.time.LocalDate;
 
 public class Duck extends Animal {
-    public Duck(String nickName, Owner owner, LocalDate birthDate, Illness illness,
-               int movementStatistics) {
+    public Duck(String nickName, Owner owner, LocalDate birthDate, Illness illness, int movementStatistics) {
         super(nickName, owner, birthDate, illness, movementStatistics);
     }
     public Duck() {
@@ -20,21 +19,24 @@ public class Duck extends Animal {
         System.out.println(result);
     }
     @Override
-    public void ate(int grams) {
+    public void eat(int grams) {
         System.out.print("Утка" + nickName + "поел(а)" + grams);
         int result = movementStatistics = movementStatistics + grams;
         System.out.println(result);
     }
+    @Override
     public void sleep(int time) {
         System.out.print("Утка" + nickName + "спал(а)" + time);
         int result = movementStatistics = movementStatistics + time;
         System.out.println(result);
     }
+    @Override
     public void fly(int time) {
         System.out.print("Утка" + nickName + "пролетел(а)" + time);
         int result = movementStatistics = movementStatistics + time;
         System.out.println(result);
     }
+    @Override
     public void swim(int time) {
         System.out.print("Утка" + nickName + "плавал(а)" + time);
         int result = movementStatistics = movementStatistics + time;

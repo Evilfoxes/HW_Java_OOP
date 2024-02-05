@@ -3,10 +3,9 @@ package Clients;
 import java.time.LocalDate;
 
 public class Cat extends Animal {
-    double discount;
+    Double discount;
 
-    public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness,
-               Double discount, int movementStatistics) {
+    public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount, int movementStatistics) {
         super(nickName, owner, birthDate, illness, movementStatistics);
         this.discount = discount;
     }
@@ -33,11 +32,12 @@ public class Cat extends Animal {
         System.out.println(result);
     }
     @Override
-    public void ate(int grams) {
+    public void eat(int grams) {
         System.out.print("Кот/кошка" + nickName + "поел(а)" + grams);
         int result = movementStatistics = movementStatistics + grams;
         System.out.println(result);
     }
+    @Override
     public void sleep(int time) {
         System.out.print("Кот/кошка" + nickName + "спал(а)" + time);
         int result = movementStatistics = movementStatistics + time;

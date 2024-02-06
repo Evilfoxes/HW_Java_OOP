@@ -6,6 +6,6 @@ public class Owner {
         this.fullName = fullName;
     }
     public String toString() {
-        return "Owner{" + "fullName='" + fullName + '\''+ '}';
+        return "Хозяин (" + fullName + ")";
     }
 }

@@ -7,6 +7,6 @@ public class Illness {
     }
     @Override
     public String toString() {
-        return "Illness{" + "title='" + title + '\''+ '}';
+        return "Заболевание (" + title + ")";
     }
 }

@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class Cat extends Animal {
     Double discount;
 
-    public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount, int movementStatistics) {
-        super(nickName, owner, birthDate, illness, movementStatistics);
+    public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
+        super(nickName, owner, birthDate, illness);
         this.discount = discount;
     }
     public Cat() {
@@ -28,20 +28,14 @@ public class Cat extends Animal {
     @Override
     public void toGo(int meters) {
         System.out.print("Кот/кошка" + nickName + "прошел" + meters);
-        int result = movementStatistics = movementStatistics + meters;
-        System.out.println(result);
     }
     @Override
     public void eat(int grams) {
         System.out.print("Кот/кошка" + nickName + "поел(а)" + grams);
-        int result = movementStatistics = movementStatistics + grams;
-        System.out.println(result);
     }
     @Override
     public void sleep(int time) {
         System.out.print("Кот/кошка" + nickName + "спал(а)" + time);
-        int result = movementStatistics = movementStatistics + time;
-        System.out.println(result);
     }
 
 }

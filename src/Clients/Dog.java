@@ -6,13 +6,13 @@ public class Dog extends Animal {
     public Dog(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
-    public Dog() {
-        super();
-    }
-    public void gav() {
-
-        System.out.println("Гав");
-    }
+//    public Dog() {
+//        super();
+//    }
+//    public void gav() {
+//
+//        System.out.println("Гав");
+//    }
     @Override
     public void toGo(int meters) {
         System.out.print("Собака" + nickName + "прошла" + meters);

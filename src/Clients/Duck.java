@@ -6,12 +6,12 @@ public class Duck extends Animal {
     public Duck(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
-    public Duck() {
-        super();
-    }
-    public void Krya() {
-        System.out.println("Кря");
-    }
+//    public Duck() {
+//        super();
+//    }
+//    public void Krya() {
+//        System.out.println("Кря");
+//    }
     @Override
     public void toGo(int meters) {
         System.out.print("Утка" + nickName + "прошла" + meters);

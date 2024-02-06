@@ -7,21 +7,20 @@ public class Cat extends Animal {
 
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
-        this.discount = discount;
     }
-    public Cat() {
-        super();
-        this.discount = 10D;
-    }
-    public Double getDiscount(){
-        return discount;
-    }
-    public void setDiscount(Double discount){
-        this.discount = discount;
-    }
-    public void meow() {
-        System.out.println("Мяу");
-    }
+//    public Cat() {
+//        super();
+//        this.discount = 10D;
+//    }
+//    public Double getDiscount(){
+//        return discount;
+//    }
+//    public void setDiscount(Double discount){
+//        this.discount = discount;
+//    }
+//    public void meow() {
+//        System.out.println("Мяу");
+//    }
     public String toString(){
         return super.toString() + "Discount("+discount+")";
     }

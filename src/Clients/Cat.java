@@ -18,23 +18,23 @@ public class Cat extends Animal {
 //    public void setDiscount(Double discount){
 //        this.discount = discount;
 //    }
-//    public void meow() {
+//    public static void meow() {
 //        System.out.println("Мяу");
 //    }
     public String toString(){
-        return super.toString() + "Discount("+discount+")";
+        return super.toString() + "Discount("+ discount +")";
     }
     @Override
     public void toGo(int meters) {
-        System.out.print("Кот/кошка" + nickName + "прошел" + meters);
+        System.out.print("Кот/кошка " + nickName + " прошел " + meters);
     }
     @Override
     public void eat(int grams) {
-        System.out.print("Кот/кошка" + nickName + "поел(а)" + grams);
+        System.out.print("Кот/кошка " + nickName + " поел(а) " + grams);
     }
     @Override
     public void sleep(int time) {
-        System.out.print("Кот/кошка" + nickName + "спал(а)" + time);
+        System.out.print("Кот/кошка " + nickName + " спал(а) " + time);
     }
 
 }

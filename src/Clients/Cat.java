@@ -3,38 +3,31 @@ package Clients;
 import java.time.LocalDate;
 
 public class Cat extends Animal {
-    Double discount;
 
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
-//    public Cat() {
-//        super();
-//        this.discount = 10D;
-//    }
-//    public Double getDiscount(){
-//        return discount;
-//    }
-//    public void setDiscount(Double discount){
-//        this.discount = discount;
-//    }
-//    public static void meow() {
-//        System.out.println("Мяу");
-//    }
-    public String toString(){
-        return super.toString() + "Discount("+ discount +")";
-    }
+
     @Override
     public void toGo(int meters) {
-        System.out.print("Кот/кошка " + nickName + " прошел " + meters);
+        System.out.print("Кот/кошка " + nickName + " прошел(шла) " + meters + " метров. ");
     }
     @Override
     public void eat(int grams) {
-        System.out.print("Кот/кошка " + nickName + " поел(а) " + grams);
+        System.out.print("Кот/кошка " + nickName + " поел(а) " + grams + " грамм. ");
     }
     @Override
     public void sleep(int time) {
-        System.out.print("Кот/кошка " + nickName + " спал(а) " + time);
+        System.out.print("Кот/кошка " + nickName + " спал(а) " + time + " часов. ");
+    }
+    @Override
+    public void fly(int meters) {
+        System.out.print("Кот/кошка "+ nickName + " пролетел(а) " + meters + " метров! Потому что кошки не умеют летать!");
+    }
+    @Override
+    public void swim(int meters) {
+        System.out.print("Кот/кошка " + nickName + " проплыл(а) " + meters + " метров! Кошки конечно же умеют плавать, " +
+                "но не очень любят воду.");
     }
 
 }

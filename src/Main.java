@@ -1,5 +1,6 @@
 import Clients.*;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 
 public class Main {
@@ -15,21 +16,40 @@ public class Main {
                 LocalDate.of(2023, 05, 13), new Illness("Паратиф"));
 
         System.out.println(cat);
-        cat.eat(7);
+        cat.eat(150);
+        System.out.println();
         cat.toGo(25);
+        System.out.println();
         cat.sleep(7);
+        System.out.println();
+        cat.fly(0);
+        System.out.println();
+        cat.swim(0);
+        System.out.println();
         System.out.println("***********");
         System.out.println(dog);
-        dog.eat(25);
+        dog.eat(1000);
+        System.out.println();
         dog.toGo(150);
+        System.out.println();
         dog.sleep(10);
+        System.out.println();
+        dog.fly(0);
+        System.out.println();
+        dog.swim(0);
+        System.out.println();
         System.out.println("***********");
         System.out.println(duck);
-        duck.eat(10);
+        duck.eat(100);
+        System.out.println();
         duck.toGo(25);
+        System.out.println();
         duck.sleep(5);
+        System.out.println();
         duck.fly(75);
+        System.out.println();
         duck.swim(100);
+        System.out.println();
         System.out.println("***********");
     }
 

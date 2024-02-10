@@ -1,6 +1,6 @@
 package Clients;
 
-import Intarface.Goable;
+import Interface.Goable;
 
 import java.time.LocalDate;
 

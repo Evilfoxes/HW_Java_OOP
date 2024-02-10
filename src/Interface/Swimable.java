@@ -1,4 +1,4 @@
-package Intarface;
+package Interface;
 
 public interface Swimable {
     double swim();

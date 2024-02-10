@@ -1,6 +1,6 @@
 package Clients;
 
-import Intarface.Swimable;
+import Interface.Swimable;
 
 import java.time.LocalDate;
 

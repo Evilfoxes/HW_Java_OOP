@@ -1,8 +1,8 @@
 package Clients;
 
-import Intarface.Flyable;
-import Intarface.Goable;
-import Intarface.Swimable;
+import Interface.Flyable;
+import Interface.Goable;
+import Interface.Swimable;
 
 import java.time.LocalDate;
 

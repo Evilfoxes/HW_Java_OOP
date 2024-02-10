@@ -1,11 +1,12 @@
 package Clients;
 
 import Intarface.Flyable;
+import Intarface.Goable;
 import Intarface.Swimable;
 
 import java.time.LocalDate;
 
-public class Duck extends Animal implements Swimable, Flyable {
+public class Duck extends Animal implements Swimable, Flyable, Goable {
     public Duck(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
@@ -33,11 +34,16 @@ public class Duck extends Animal implements Swimable, Flyable {
 
     @Override
     public double fly() {
-        return 0;
+        return 150;
     }
 
     @Override
     public double swim() {
-        return 0;
+        return 100;
+    }
+
+    @Override
+    public double run() {
+        return 3;
     }
 }

@@ -15,6 +15,9 @@ public class Main {
         Animal duck = new Duck("Чеппи", new Owner("Хорина Татьяна"),
                 LocalDate.of(2023, 05, 13), new Illness("Паратиф"));
 
+        Animal fish = new Fish(("Бусинка", new Owner("Васильев Андрей"),
+                LocalDate.of(2023, 08, 17), new Illness("Сапролегниоз")));
+
         System.out.println(cat);
         cat.eat(150);
         System.out.println();

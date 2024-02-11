@@ -14,11 +14,11 @@ public class Nurse extends Personal{
         this.nurseId = nurseId;
     }
     public Map<Integer, String> procedure = Map.of(1,"Укол", 2, "Витамины");
-
     public String getProcedure(Animal animal) {
         Random rnd = new Random();
         int random = rnd.nextInt(procedure.size());
         String proc = procedure.get(random);
+        animal.setIllness(new Illness(proc));
         return proc;
     }
 

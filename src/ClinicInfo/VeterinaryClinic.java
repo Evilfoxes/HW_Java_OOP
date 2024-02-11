@@ -11,74 +11,53 @@ import java.util.List;
 import java.util.Objects;
 
 public class VeterinaryClinic {
-    private List<Objects> personalsList;
-    private String name;
+    private List<Personal> personals;
+    private List<Animal> enimals;
+    private List<Doctor> doctors;
+    private List<Nurse> nurses;
 
-        public VeterinaryClinic(String name, List<Objects>, personalsList) {
-            this.name = name;
-            this.personalsList = personalsList;
+        public VeterinaryClinic() {
+            this.personals = new ArrayList<>();
+            this.enimals = new ArrayList<>();
         }
-        public String getName() {
-            return name;
+        public List<Personal> getPersonal() {
+            return personals;
         }
-        public List<Objects> getPersonals() {
-            return personalsList;
-
+        public List<Animal> getEnimals() {
+            return enimals;
         }
-        @Override
-        public String toString() {
-            return String.format("name = %s, personals = %s", name, personalsList);
+        public List<Doctor> getDoctors() {
+            return doctors;
         }
-        static void printPersonal(List<ClinicPesonal> personalList) {
-            for (Objects personal : personalList) {
-                System.out.println(personal);
-            }
+        public List<Nurse> getNurses() {
+            return nurses;
         }
-        static void getDoctors(List<ClinicPersonal> personalList) {
-            for (Objects doctor : personalList) {
-                if (doctor instanceof Doctor){
-                    System.out.println(doctor);
-                }
-            }
-        }
-        static void getNurses(List<ClinicPersonal> personalList) {
-            for (Objects nurse : personalList) {
-                if (nurse instanceof Nurse){
-                    System.out.println(nurse);
-                }
-            }
-        }
-        public void printAnimalList(List<Animal> list) {
-            for (Animal animal : list) {
-                System.out.println(animal);
-            }
-        }
-        public void getGoable(List<Animal> animalList) {
-            Animal animal;
-            for (int i = 0; i < animalList.size(); i++) {
-                animal = animalList.get(i);
+        public List<Animal> getGoables() {
+            List<Animal> goableList = new ArrayList<>();
+            for (Animal animal : enimals) {
                 if (animal instanceof Goable) {
-                    System.out.println(animal);
+                    goableList.add(animal);
                 }
             }
+            return goableList;
         }
-        public void getSwimable(List<Animal> animalList) {
-            Animal animal;
-            for (int i = 0; i < animalList.size(); i++) {
-                animal = animalList.get(i);
+        public List<Animal> getSwimables() {
+            List<Animal> swimableList = new ArrayList<>();
+            for (Animal animal : enimals) {
                 if (animal instanceof Swimable) {
-                    System.out.println(animal);
+                    swimableList.add(animal);
                 }
             }
+            return swimableList;
         }
-        public void getFlyable(List<Animal> animalList) {
-            Animal animal;
-            for (int i = 0; i < animalList.size(); i++) {
-                animal = animalList.get(i);
+        public List<Animal> getFlyables() {
+            List<Animal> flyableList = new ArrayList<>();
+            for (Animal animal : enimals) {
                 if (animal instanceof Flyable) {
-                    System.out.println(animal);
+                    flyableList.add(animal);
                 }
             }
+            return flyableList;
         }
     }
 

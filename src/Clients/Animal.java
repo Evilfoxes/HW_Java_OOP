@@ -22,9 +22,9 @@ public class Animal {
 //        return birthDate;
 //    }
 //
-//    public Illness getIllness() {
-//        return illness;
-//    }
+    public void setIllness(Illness illness) {
+        this.illness = this.illness;
+    }
 //
 //    public void setIllness(Illness illness) {
 //        this.illness = illness;

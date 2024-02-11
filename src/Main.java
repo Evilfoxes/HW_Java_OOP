@@ -1,8 +1,11 @@
 import Clients.*;
+import ClinicInfo.Doctor;
+import ClinicInfo.Nurse;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,51 +31,29 @@ public class Main {
         animals.add(duck);
         animals.add(fish);
         animals.add(gull);
-//        System.out.println(cat);
-//        System.out.println(dog);
-//        System.out.println(duck);
-//        System.out.println(fish);
-//        System.out.println(gull);
 
+        Doctor doctor = new Doctor("Петров Иван Иванович",
+                LocalDate.of(1986, 4, 6), "Хирург", 731);
+        Doctor doctor1 = new Doctor("Петрова Мария Васильевна",
+                LocalDate.of(1973, 9, 13), "Травмотолог", 561);
+        Doctor doctor2 = new Doctor("Кузьмин Роман Андреевич",
+                LocalDate.of(1988, 10, 12), "УЗИст", 671);
+        List<Doctor> doctors = new ArrayList<>();
+        doctors.add(doctor);
+        doctors.add(doctor1);
+        doctors.add(doctor2);
 
-//        System.out.println(cat);
-//        cat.eat(150);
-//        System.out.println();
-//        cat.toGo(25);
-//        System.out.println();
-//        cat.sleep(7);
-//        System.out.println();
-//        cat.fly(0);
-//        System.out.println();
-//        cat.swim(0);
-//        System.out.println();
-//        System.out.println("***********");
-//        System.out.println(dog);
-//        dog.eat(1000);
-//        System.out.println();
-//        dog.toGo(150);
-//        System.out.println();
-//        dog.sleep(10);
-//        System.out.println();
-//        dog.fly(0);
-//        System.out.println();
-//        dog.swim(0);
-//        System.out.println();
-//        System.out.println("***********");
-//        System.out.println(duck);
-//        duck.eat(100);
-//        System.out.println();
-//        duck.toGo(25);
-//        System.out.println();
-//        duck.sleep(5);
-//        System.out.println();
-//        duck.fly(75);
-//        System.out.println();
-//        duck.swim(100);
-//        System.out.println();
-//        System.out.println("***********");
+        Nurse nurse = new Nurse("Криворот Елена Владимировна",
+                LocalDate.of(1981, 12, 30), "Медсестра", 144);
+        Nurse nurse1 = new Nurse("Баринова Светлана Евгеньевна",
+                LocalDate.of(1989, 1, 17), "Медсестра", 149);
+        List<Nurse> nurses = new ArrayList<>();
+        nurses.add(nurse);
+        nurses.add(nurse1);
 
-
+        System.out.println("Пациент " + dog + " доктор " + doctor + " диагноз " + doctor.getDiagnos(dog));
+        System.out.println();
+        System.out.println("Пациент " + cat + " медсестра " + nurses + " диагноз " + nurse.getProcedure(cat));
     }
 
 }

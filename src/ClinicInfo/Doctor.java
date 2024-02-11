@@ -12,9 +12,6 @@ public class Doctor extends Personal{
         super(nameDoctor, birthday, specialty);
         this.doctorId = doctorId;
     }
-    public int getDoctorId() {
-        return doctorId;
-    }
     public Map<Integer, String> diagnos = Map.of(1,"Болен", 2, "Здоров");
 
     public String getDiagnos(Animal animal) {

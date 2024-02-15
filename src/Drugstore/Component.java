@@ -3,9 +3,9 @@ package Drugstore;
 public abstract class Component implements Comparable<Component> {
     private String title;
     private Double weight;
-    private Double power;
+    private int power;
 
-    public Component(String title, Double weight, Double power) {
+    public Component(String title, Double weight, int power) {
         this.title = title;
         this.weight = weight;
         this.power = power;
@@ -18,7 +18,7 @@ public abstract class Component implements Comparable<Component> {
 
     @Override
     public int compareTo(Component o) {
-        return this.power.compareTo(o.power);
+        return Integer.compare(this.power, o.power);
 
     }
 }

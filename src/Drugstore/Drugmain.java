@@ -25,6 +25,12 @@ public class Drugmain {
         Pharmacy2 pharmacy3 = new Pharmacy2();
         pharmacy3.addComponents(penicillin, azitronite);
 
+        Pharmacy2 pharmacy4 = new Pharmacy2();
+        pharmacy4.addComponents(penicillin, azitronite, water);
+
+        Pharmacy2 pharmacy5 = new Pharmacy2();
+        pharmacy5.addComponents(penicillin, azitronite, water, penicillin);
+
         List<Component> components = new ArrayList<>();
 
         components.add(azitronite);
